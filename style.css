@@ -1,0 +1,167 @@
+.clearfix{
+    content: '';
+    display:table;
+    clear:both;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    min-width: 900px;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    background: url('image/hero.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 60vw;
+    height: 85vh;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: beige;
+}
+.tags{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    height: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color:#666;
+    text-transform: uppercase;
+    background-color: beige;
+    
+}
+.container-main{
+    display:flex;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+.wrapper{
+    text-align: center;
+    font:inherit;
+    width:50%;
+    
+    padding: 3rem;
+    /* margin: 3.5rem 0; */
+    display: flex;
+    flex-direction: column;
+}
+.player-banner{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    color:#999;
+    padding: 1rem;
+}
+.score{
+    font-size: 7.5rem;
+    font-weight: 100;
+    color: #FB928E;
+    padding-bottom: 2rem;
+}
+
+
+
+.current-score{
+    display: block;
+    text-orientation: sideways;
+    text-transform: uppercase;
+    width:10rem;
+    /* box-sizing: border-box; */
+    height: 10rem;
+    margin: 4rem auto;
+    background-color: #FB928E;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    font-weight: 200;
+    padding: 1.5rem;
+}
+.current-score span{
+    display: block;
+    color: darkmagenta;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 2rem;
+}
+
+.dice{
+    position: absolute;
+    display: block;
+    width:9%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 .2rem 1.5rem rgba(0,0,0,.5);
+ }
+ 
+
+
+#roll,#hold{
+    width: 20%;;
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+}
+#roll{
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+}
+
+#hold{
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+}
+
+  /* .icon{ 
+     display: block;
+     width:1%;
+     fill: #FB928E;
+ }  */
+
+ .cta{
+     display: block;
+     width: 100%;
+     color: #666;
+     font-weight:400;
+     font-size: 2rem;
+ }
+ #hold:hover > span,
+ #new:hover,
+ #roll:hover > span{ 
+    color: #FB928E;
+     cursor: pointer;
+     
+ }
+
+
+ #new:active,#hold:active,#roll:active{
+    cursor: pointer;
+ }
+
+
+ 
+ .active,
+ .active *{
+     background: #ddd;
+      color: deeppink;
+     font-weight: 500;
+ }

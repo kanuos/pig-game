@@ -1,0 +1,18 @@
+day 1 : 
+	completed html css
+	completed roll function
+	completed hold function
+	active class
+	rest of the functionality,
+
+
+	jonas: [
+			breakpoint set,
+			multiple 6 story 
+			]
+
+	left :
+			jonas: [  
+					add 2nd dice and if one of em is 1 reset
+					add rule page(default hamburger and page hidden)
+		   		   ]	
